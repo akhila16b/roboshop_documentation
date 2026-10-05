@@ -94,25 +94,7 @@ systemctl restart mongod
 
 
 
-## Redis - Cache server
-App -> Database
 
-In-memory database.
-
-1. request the connection from connection pool.
-2. Open the connection
-3. do the transaction (CRUD)
-4. close the connection
-
-For this whole process it takes time so called expensive. So only cache.
-
-If stored in cache = App -> Cache -> User
-
-If not stored in cache = App -> Cache -> DB -> Cache -> User
-
-READ operations are cached, TTL is configured for example 1 hour.
-
-If there were made any changes,, then the developers makes the cache invalidated (App -> DB).
 
 
 
