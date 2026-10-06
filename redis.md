@@ -1,14 +1,18 @@
 # Redis - Cache server
-App -> Database
 
-In-memory database.
+Redis (REmote DIctionary Server) is an open-source, in-memory data store used as a database, cache. It is known for ultra-fast performance due to its in-memory(stores in RAM) architecture. Uses a simple key-value model but supports complex data types.
+
+### When application connects to database the below are the background steps happen :
 
 1. request the connection from connection pool.
 2. Open the connection
 3. do the transaction (CRUD)
 4. close the connection
+For this whole process it takes time so called expensive. So we use cache.
 
-For this whole process it takes time so called expensive. So only cache.
+Inmemory database -> RAM
+Processor -> HD -> RAM -> User
+It stores the data in RAM aol called IN-memory database
 
 If stored in cache = App -> Cache -> User
 
@@ -16,9 +20,7 @@ If not stored in cache = App -> Cache -> DB -> Cache -> User
 
 READ operations are cached, TTL is configured for example 1 hour.
 
-If there were made any changes,, then the developers makes the cache invalidated (App -> DB).
-
-Redis (REmote DIctionary Server) is an open-source, in-memory data store used as a database, cache. It is known for ultra-fast performance due to its in-memory(stores in RAM) architecture. Uses a simple key-value model but supports complex data types.
+If there were made any changes, then the developers makes the cache invalidated (App -> DB).
 
 **Versions of the DB Software you will get context from the developer, Meaning we need to check with developer.**
 
