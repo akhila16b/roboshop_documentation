@@ -83,7 +83,9 @@ If you want to more precise means as you should access from only catalogue serve
 Restart the service to make the changes effected.
 systemctl restart mongod
 
+```shell 
 netstat -lntp
+```
 Restart the service to make the changes effected.
 
 ```shell 
