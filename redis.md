@@ -43,6 +43,8 @@ Update `protected-mode` from `yes` to `no` in   `/etc/redis/redis.conf`
 
 You can edit file by using **`vim /etc/redis/redis.conf`**
 
+Make sure the port opens in **`6379`**
+
 Start & Enable Redis Service 
 
 ```shell 
