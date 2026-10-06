@@ -1,4 +1,4 @@
-# Redis - Cache server
+# Redis - Cache server (6379)
 
 Redis (REmote DIctionary Server) is an open-source, in-memory data store used as a database, cache. It is known for ultra-fast performance due to its in-memory(stores in RAM) architecture. Uses a simple key-value model but supports complex data types.
 
@@ -53,3 +53,10 @@ Start & Enable Redis Service
 systemctl enable redis 
 systemctl start redis 
 ```
+
+```shell
+netsta -lntp
+```
+
+Check the port no - 6379.
+
