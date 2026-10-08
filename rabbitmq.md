@@ -1,10 +1,9 @@
 ### Queue Database
 
 1. Synchronous = immediate response
+   HTTP -> send a request and wait for response and if there is no response then shows error.
 2. Asynchronous = Response will come in sometime and no need to wait.
-
-1. HTTP -> send a request and wait for response and if there is no response then shows error.
-2. MQ -> Fire and forget(don't wait for response)
+   MQ -> Fire and forget(don't wait for response)
 
 If we send a message from system1 to system 2 there is a broker in middle who handles it.
 
